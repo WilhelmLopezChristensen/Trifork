@@ -1,5 +1,17 @@
-# Getting Started with Inventory system App
+# Introduktion to the Inventory system App
 
-- Run the webapp with azure docker container, just type in the frontend `npm start`.
+### Backend cloud
 
-- Run the webapp locally with docker, just type in the backend `docker run -d -p 7070:80 reactservice2.azurecr.io/reactservice:v1`. And change the endpoint in the frontend. and type in the frontend `npm start`, and
+- If you want to run the webapp with Azure container registry and docker, Just type in the "trifork-react-frontend" project : `npm start`.
+
+---
+
+### Backend locally
+
+- Do you want to run the webapp locally with docker,type in the "trifork_project_backend"?
+- First build the docker image : `docker build -t reactservice2.azurecr.io/reactservice:v1 .`
+- Second run the image : `docker run -d -p 8080:80 reactservice2.azurecr.io/reactservice:v1`.
+
+- Remember to change the endpoint in the "trifork-react-frontend".
+
+- Finally in the "trifork-react-frontend" project. Type : `npm start`.
